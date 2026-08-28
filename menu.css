@@ -1,18 +1,17 @@
-/* home */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
-section{
+.menu{
     width: 100%;
     height: 100vh;
     background-color: #fff4ef; 
     color: #4A2C1A;
 
 }
-section nav{
+
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,27 +22,27 @@ section nav{
     box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
     z-index: 1000;
 }
-section nav .logo img{
+ nav .logo img{
     width: 100px;
     cursor: pointer;
     margin: 8px 0; 
     margin-left: 5px;
     
 }
-section nav ul{
+ nav ul{
     list-style:a none;
 }
-section nav li{
+ nav li{
     display: inline-block;
     margin: 15px;
 }
- section nav ul li a{
+  nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 17px;
     font-weight: 500;
  }
- section nav ul li a::after{
+  nav ul li a::after{
     content: "";
     width: 0%;
     height: 2px;
@@ -51,74 +50,19 @@ section nav li{
     display: block;
     transition: 0.2s linear;
  }
- section nav ul li a:hover::after{
+  nav ul li a:hover::after{
     width: 100%;
  }
- section nav ul li a:hover{
+  nav ul li a:hover{
      color: #fac031;
  }
- .main{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    top: 130px;
-    position: relative;
- }
- .main_text h1{
-    font-size: 50px;
-    position: relative;
-    top: -90px;
-    left: 20ox;
-}
-.main_text h1 span{
-    margin-left: 15px;
-    color: #fac031;
-    font-family: mv boli;
-    line-height: 22px;
-    font-size: 70px;
-}
-.main_image img{
-    width: 700px;
-    position: relative;
-    left: 70px;
-    top: 20px;
-}
-p{
-    width: 650px;
-    text-align: justify;
-    position: relative;
-    left: 123px;
-    bottom: 120px;
-    line-height: 22px;
-}
-.main_btn{
-    background: #fac031;
-    position: relative;
-    left: 123px;
-    bottom: 30px;
-    width: 150px;
-    cursor: pointer;
-    padding: 12px 25px;
-}
-.main_btn a{
-    color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-
-}
-/* about */
-
-
-/* menu */
-<!---menu----->
-
-menu h1{
+ .menu h1{
     font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    
 
 }
 .menu h1 span{
@@ -142,6 +86,7 @@ menu h1{
     margin-left: 90px;
     gap: 25px; 
     padding-bottom: 10px;
+    margin-top: 200px;
   
 }
 .menu_Card{
@@ -151,9 +96,7 @@ menu h1{
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgb(0,0,0,0.2);
     text-align: center;
-   
-    
-    } 
+} 
 .menu_image{
     width: 300px;
     margin: 0;
@@ -182,5 +125,3 @@ color: #fac031;
     align-items: center;
     justify-content: center;
 }
-
-
