@@ -2,20 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+
 }
-.order{
-    width: 100%;
-    height: 100vh;
-    color: #4A2C1A;
-    background-size: cover;
-    background-position: center;
-   }
+
  nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    position: none;
     right: 0;
     left: 0;
     background-color: peachpuff;
@@ -56,22 +50,37 @@
   nav ul li a:hover{
      color: #fac031;
  }
- .order h1{
+ .title{
+    font-size: 45px;
+    color: #4A2C1A;
+    font-weight: bolder;
+    font-family: sans-serif;
+ }
+ .order{
+    width: 100%;
+    height: 100vh;
+    color: #4A2C1A;
+    background-size: cover;
+    background-position: center;
+   background-color: #fffaf3; 
+   }
+ .root h1{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000;
-    font-size: 55px;
-    
- }
- .order h1 span{
+    font-size: 35px;
+    margin-bottom: 500px;
+    }
+   
+ 
+ .root h1 span{
     color: #fac031;
     margin-right: 15px;
     font-family: mv boli;
-   
- }
+    }
     
-.order h1 span::after{
+.root h1 span::after{
     content: '';
     width: 100%;
     height: 2px;
@@ -79,6 +88,7 @@
     display: block;
     position: relative;
     bottom: 15px;
+     
  }
 .order_main{
     display: flex;
@@ -87,13 +97,189 @@
 }
 .order_image img{
     width: 600px;
+    margin-top: 100px;
 }
 .order_main form{
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 0 10px;
 }
-.order_main form input p{
+.order_main form p{
     line-height: 25px;
+    margin-left: 5px;
+} 
+
+.order_main form input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    outline: none;
+    background: #eeeeee;
+    margin: 5px;
+    border-radius: 3px;
+}
+.order_main form input:focus{
+    border: 2px solid #fac031;
+}
+.order_btn{
+    padding: 10px 0;
+    background: #fac031;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
+/*Team*/
+.team{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #fffaf3; 
+
+}
+ h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+    }
+   
+ 
+ h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+    }
+    
+ h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+ }
+ .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+.profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.profile:hover{
+  border-radius: 20px;
+  height: 320px;
+}
+.profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+.profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+.info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+.profile:hover .info{
+    top: 60%;
+}
+.info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+.info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+  
+}
+.info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.team_icon i:hover{
+    color: #fac031;
+}
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+    background-color: #fffaf3; 
+   
+
+    }
+.footer_main{
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+.footer_tag{
+    text-align: center;
+}
+h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+p{
+    margin: 10px 0;
+}
+i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+i:hover{
+    color: #fac031;
+}
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: #fac031;
+     border-radius: 15px;
+}

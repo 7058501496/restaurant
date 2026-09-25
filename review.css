@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.review{
+    width: 100%;
+    height: 150vh;
+    background-color: #fffaf3; 
+    color: #4A2C1A;
+
+  }
+ 
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color:peachpuff;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+    z-index: 1000;
+   
+}
+ nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0; 
+    margin-left: 5px;
+    
+}
+ nav ul{
+    list-style:a none;
+}
+ nav li{
+    display: inline-block;
+    margin: 15px;
+}
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+ }
+  nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+ }
+  nav ul li a:hover::after{
+    width: 100%;
+ }
+  nav ul li a:hover{
+     color: #fac031;
+ }
+ .icons:hover i {
+    color: #fac031;
+    transition: 0.3s;
+ }
+ .title{
+    font-size: 45px;
+    color: #4A2C1A;
+    font-weight: bolder;
+    font-family: sans-serif;
+ }
+ .Ac  {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+ }
+  .Ac  span{
+    margin-right: 15px;
+    color: #fac031;
+    font-family: mv boli;
+ }
+  .Ac span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+.review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+    margin-top: 100px;
+
+}
+.review_card{
+    width: 350px;
+    height: 485px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+.review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+
+}
+.review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+.review_text{
+    text-align: center;
+
+}
+.review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+.review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+.review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;
+}
+.review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+.review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review_card:hover .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+
+}
+.review_card:hover p{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
