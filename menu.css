@@ -5,96 +5,48 @@
 
     
 }
+.menu{
+    width: 100%;
+    height: 550vh;
+    color:  #4A2C1A;
+    background-image: url(asset/images/color\ theme.png);
 
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    right: 0;
-    left: 0;
-    background-color:peachpuff;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
-    z-index: 1000;
 }
- nav .logo img{
-    width: 100px;
+
+
+
+  .logo img{
+    width: 80px;
     cursor: pointer;
-    margin: 8px 0; 
+    margin: 8px ; 
     margin-left: 5px;
     
 }
- nav ul{
-    list-style:a none;
-}
- nav li{
-    display: inline-block;
-    margin: 15px;
-}
-  nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
- }
-  nav ul li a::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    transition: 0.2s linear;
- }
-  nav ul li a:hover::after{
-    width: 100%;
- }
-  nav ul li a:hover{
-     color: #fac031;
- }
+  
  .title{
-    font-size: 45px;
+    font-size: 55px;
     color: #4A2C1A;
     font-weight: bolder;
     font-family: sans-serif;
  }
 
- .menu{
-    width: 100%;
-    height: 550vh;
-    background-color: white; 
-    color:  #4A2C1A;
-    background-color: #fffaf3; 
-}
-  .hello h1{
+ 
+  .hello {
     font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
-    margin-top: 400px;
+    gap: 10px;
+    margin-top: 20px;
     
 }
-  .hello h1 span{
-   color:  #fac031;
-   margin-right: 15px;
-   font-family: mv boli; 
-}
-  .hello  h1  span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    position: relative;
-    bottom: 15px;
-}
+  
 .main_cont{
    display: flex;
    flex-wrap: wrap;
    gap: 25px;
    padding-bottom: 10px;
-   margin-top: 80px;
+   margin-top: 70px;
    margin-left: 70px;
 
 }
@@ -180,3 +132,82 @@ nav{
   justify-content: center;
 }
 
+
+
+@media screen and (max-width: 768px) {
+
+    
+    .menu {
+        width: 100%;
+        min-height: 100vh;
+        background-position: center;
+        
+    }
+    .hello {
+        font-size: 35px;
+        margin-top: 20px;
+        align-items: center;
+        
+    }
+    .main_cont {
+        width: 100%;
+       flex-direction: column;
+       align-items: center;
+       gap: 25px;
+       margin: 0;
+       padding: 10px;
+       
+      
+    }
+    .menu_card {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+   
+    .menu_image {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .small_card {
+        width: 40px;
+        height: 40px;
+        float: right;
+        position: relative;
+        top: -215px;
+        right: -5px;
+    }
+
+    .menu_info h2 {
+        width: 80%;
+        font-size: 22px;
+       
+    }
+    .menu_info p {
+        width: 90%;
+        margin:  auto;
+        font-size: 14px;
+        
+    }
+    .menu_info h3 {
+        font-size: 18px;
+       
+    }
+     .menu_icon {
+        
+        font-size: 14px;
+    }
+
+  
+    .menu_btn {
+        width: 50%;
+        padding: 10px;
+        margin: 8px auto;
+        align-items: center;
+        
+    }
+}

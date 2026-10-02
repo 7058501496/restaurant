@@ -6,84 +6,23 @@
 .gallery{
     width: 100%;
     height: 150vh;
-    background-color:#FFF8E5 ;
     color: #4A2C1A;
-    background-color: #fffaf3; 
+    background-image: url(asset/images/color\ theme.png);
+   
 
 }
- nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    left: 0;
-    background-color: peachpuff;
-    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
-    z-index: 1000;
-}
- nav .logo img{
-    width: 100px;
-    cursor: pointer;
-    margin: 8px 0; 
-    margin-left: 5px;
-    
-}
- nav ul{
-    list-style:a none;
-}
- nav li{
-    display: inline-block;
-    margin: 15px;
-}
-  nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
- }
-  nav ul li a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    transition: 0.2s linear;
- }
-  nav ul li a:hover::after{
-    width: 100%;
- }
-  nav ul li a:hover{
-     color: #fac031;
-  }
-  .title{
-    font-size: 45px;
-    color: #4A2C1A;
-    font-weight: bolder;
-    font-family: sans-serif;
- }
+ 
   .Dc{
     font-size: 55px;
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 140px;
+    gap: 10px;
+    margin-top: 30px;
+   
   
   }
-   .Dc span{
-     margin-right: 15px;
-     color: #fac031;
-     font-family: mv boli;
- }
-   .Dc span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    position: relative;
-    display: block;
-    bottom: 15px;
-   }
+   
    .gallery_image_box{
     width: 95%;
     margin: 10px auto;
@@ -98,6 +37,8 @@
      justify-content: center;
      background: black;  
      object-fit: cover;
+     position: relative;
+   
    } 
    .gallery_image img{
       width: 100%;
@@ -149,3 +90,60 @@
       opacity: 1;
       transform: translateY(0);
    }
+
+
+  
+
+@media screen and (max-width: 768px) {
+
+  
+    .gallery {
+        width: 100%;
+        min-height: 100vh;
+        background-position: center;
+    }
+  
+    .Dc {
+        font-size: 35px;
+        margin-top: 50px;
+        text-align: center;
+
+       }
+
+
+    .gallery_image_box {
+        width: 92%;
+        margin: 15px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery_image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+  
+    .gallery_image h3 {
+        font-size: 25px;
+        margin-bottom: 100px;
+    }
+
+ 
+    .gallery_image p {
+     
+        width: 80%;
+        margin-top: 25px;
+    }
+
+   
+    .gallery_btn {
+        margin-top: 145px;
+        font-size: 14px;
+    }
+}
+
+
